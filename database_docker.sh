@@ -8,7 +8,7 @@ git pull
 # Copy the latest db version
 DATABASE=database_latest.sql
 gunzip ../$DATABASE.gz
-cp ../$DATABASE .
+cp -f ../$DATABASE .
 
 # If this fails the rest won't work
 docker login
