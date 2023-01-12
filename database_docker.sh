@@ -7,7 +7,7 @@ git pull
 
 # Copy the latest db version
 DATABASE=database_latest.sql
-gunzip ../$DATABASE.gz
+gunzip -f ../$DATABASE.gz
 cp -f ../$DATABASE .
 
 # If this fails the rest won't work
